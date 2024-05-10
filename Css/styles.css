@@ -413,6 +413,19 @@ footer{
     transform: scale(1.5)
 
 }
-@media screen and (max-width:300px) {
+@media  (max-width:400px) {
+    
+}
+@media (min-width:680px){
+
+}
+@media  (min-width:768px){
+
+}
+
+@media (min-width:992px){
+
+}
+@media(min-width:1500px){
     
 }
