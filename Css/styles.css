@@ -150,6 +150,12 @@ article{
     margin-bottom: 1px; 
     margin-top: 0;
 
+
+}
+#aboutme h4{
+    color: blueviolet;
+    animation: flicker 1s infinite;
+    text-align: center;
 }
 .About h1{
     text-align: center;
@@ -406,4 +412,7 @@ footer{
 #pics img:hover{
     transform: scale(1.5)
 
+}
+@media screen and (max-width:300px) {
+    
 }
