@@ -1,0 +1,409 @@
+body{
+    background-color: hsl(350, 100%, 88%);
+}
+.container{
+    /* display: grid; */
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    background: hsl(350, 100%, 88%);
+    
+    
+}
+
+/* .container img{ */
+    /* margin-top: 0; */
+/* } */
+/* hr{
+    color: brown;
+} */
+h1{
+    margin-bottom: 20px;
+    color: aliceblue;
+    text-align: center;
+    background-color: fuchsia;
+    border-radius: 50%;
+}
+h3{
+    color: brown;
+    
+}
+#home h2{
+    color: black;
+    padding-left: 10px;
+}
+h2{
+    color: black;
+    padding-right: 15px;
+}
+#navbarNav{
+    padding: 0 240px 0 0;
+}
+#nav h3{
+    color: black;
+}
+#nav{
+    height: 150px;
+    width: 100vw;
+    background: hsl(350, 100%, 88%);
+    
+}
+#nav a:hover{
+    background-color: fuchsia;
+    border-radius: 30px;
+}
+/* #nav a:hover , a.active{
+    background-color: fuchsia;
+    border-radius: 30px;
+} */
+#nav div img{
+    margin-top: 50px;
+    width: 250px;
+}
+#nav-parent{
+    padding: 0px;
+}
+
+
+#home{
+    background-image: url("https://github.com/siphokuhlenyana/ImagesPortfolio/blob/main/MYPIC.jpg?raw=true");
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 180vh;
+}
+article{
+    height:68vh ;
+}
+#home #firsth1{
+    animation: flicker 1s infinite;
+    text-align:center;
+        margin-top:3em;
+        font-family:'Lato', sans-serif;
+        font-size:3em;
+        color: aliceblue;
+        background-color: hsla(300, 100%, 50%, 0.836);
+        border-radius: 40px;
+      }
+      
+      @keyframes flicker
+      {
+          0% {opacity:0;}
+          9% {opacity:0;}
+      10% {opacity:.5;}
+      13% {opacity:0;}
+      20% {opacity:.5;}
+      25% {opacity:1;}
+      }
+      #nav button{
+          background-color: black;
+          color :aliceblue;
+          /* margin-right: 50px; */
+          /* padding-right: 30px; */
+          display: block;
+          align-content: end;
+          /* margin-right: 75%; */
+          float: right;
+          
+        }
+        #aboutme img:first-child{
+          z-index: 2;
+        }
+        #aboutme img{
+            width: 220px;
+            height: 220px;
+            border-radius: 30px 30px 30px 30px;
+            
+            display: block; 
+            margin-left: auto;
+            margin-right: auto;
+            
+            padding-bottom: 20px;
+            
+            
+        }
+        #image2{
+            position: relative;
+            /* transform: translateY(-220px); */
+            display: none;
+            z-index: 0;
+            transition: 3s ease;
+        }
+        #aboutme .image-container:hover #image2{
+         display: block;
+        }
+        
+        #aboutme .image-container:hover >img:first-child{
+            display: none;
+            transform:scale(1.2);
+            /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9YxHxsuz9jgea5FviSVQRtccPnE8tm7JjyA&usqp=CAU"); */
+        }
+        .image-container{
+            width: 220px;
+            height: 220px;
+            margin: auto;
+        }
+        
+        .About{
+            padding-top:100px;
+            padding-bottom: 0;
+    /* height: 70vh; */
+    margin-bottom: 1px; 
+    margin-top: 0;
+
+}
+.About h1{
+    text-align: center;
+    color: aliceblue;
+    margin-top: 85px;
+}
+#aboutme p{
+    color: black;
+    background-color: #9217698a;
+    text-align: center;
+    
+}
+.Testimonials{
+    background-color: hsl(350, 100%, 88%);
+    height: 65vh;
+    margin-top: 0px;
+    padding-top: 150px;
+    padding-bottom: 0;
+    
+}
+
+.Testimonials h1{
+    color: aliceblue;
+    text-align: center;
+}
+#Testimonials img{
+    width: 280px;
+    height: 280px;
+    border-radius: 0 20px 0 20px;
+    justify-content: space-evenly;
+    
+}
+
+.container{
+    display: flex;
+    /* grid-template-columns: repeat(3, 1fr); */
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.front ,.back{
+    width:280px;
+    height: 280px;
+    box-shadow: 10px 10px 4px 2px rgb(57, 115, 190,0.25);
+    border-radius: 2rem;
+    position: absolute;
+    color: aliceblue;
+    backface-visibility: hidden;
+}
+
+.card{
+    position: relative;
+    transition :transform linear 1s;
+    width: 280px;
+    height: 280px;
+    transform-style: preserve-3d;
+    border-radius: 2rem;
+}
+.container article:hover>.card {
+    transform: rotateY(180deg )rotateZ(180deg);
+    cursor:pointer;
+}
+.container article{
+    perspective: 1000px ;
+    
+}
+.back{
+    transform: rotateY(180deg)rotateZ(180deg) ;
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+#Expectise img{
+    display: inline-block;
+    flex-direction: row;
+    background-color: hsl(350, 100%, 88%);
+    border: solid black;
+    border-radius: 50%;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    width: 120px;
+    height: 120px;
+    /* white-space: nowrap; */
+    position: relative;
+}
+#Expectise img:hover{
+    transform:scale(1.2)
+}
+/* .logos .logos:hover{ 
+    -play-state:paused ; 
+}  */
+
+#Expectise p {
+     background-color:#92176993 ;
+    text-align: center;
+
+}
+#Expectise ol{
+    background-color:#92176993 ;
+    text-align: center;
+    
+}
+#Expectise{
+    height: 180vh;
+    padding-top:  200px;
+    padding-bottom: 0;
+}
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#logos{
+    display: inline-block;
+    overflow: hidden;
+    padding: 60px 0;
+    /* background-color:hsl(350, 100%, 88%) ; */
+    /* white-space: nowrap; */
+    animation: slide 15s infinite linear;
+    /* height: 100%; */
+    margin: 0 40px;
+    
+    height: 50vh;
+}
+#logos:before{
+    left: 0;
+    background: linear-gradient(to left , rgba(255,255,255,0) pink) ;
+    
+}
+#logos:after{
+    right: 0;
+    background: linear-gradient(to left , rgba(255,255,255,0) pink) ;
+    
+}
+#logos:after ,#logos:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 140px; */
+    /* height: 100%; */
+    content: ();
+    z-index: 2; 
+} 
+
+
+.front img{
+    width: 280px;
+    height: 280px;
+}
+
+
+#contacts{
+    padding-top: 350px;
+}
+#contacts button{
+float: right;
+}
+
+/* #projects{
+    padding-top: 500px;
+    height: 100vh;
+} */
+/* #projects a:active{
+    
+} */
+
+#projects{
+    background-image: url("https://github.com/siphokuhlenyana/ImagesPortfolio/blob/main/code-guy.jpg?raw=true");
+    background-repeat:repeat;
+    background-size: fit;
+    /* width: fit-content; */
+    height: 40vh;
+    width: 100%;
+    /* padding-top: 800px;
+    
+     */
+     padding-top: 350px;
+    /* height: 250px; */
+    margin-top: 0;
+    margin-bottom: 280px;
+
+}
+#projects .card {
+display: inline-flex;
+background-color: fuchsia;
+image-resolution: cover;
+width: 250px;
+height: 250px;
+}
+
+#contacts{
+    padding-top:200px;
+    padding-bottom: 50px;
+    height: 48vh;
+    margin-top: 0;
+    margin-bottom: 350px;
+    /* padding-bottom: 100px;  */
+}
+#contacts button{
+    width: 100px;
+    height: 35px;
+    align-content: center;
+    background-color: black;
+    
+}
+#contacts h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+#contacts img{
+    display: block;
+    margin-left: 550px;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    border: solid brown;
+    margin-top: 15px;
+    
+}
+
+footer{
+    background-color: rgba(255, 0, 255, 0.756);
+    color: black;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    padding: 15px;
+    width: 100%;
+    height: 200px;
+    
+    
+}
+#pics {
+    display: flex;
+
+    /* flex-direction: row; */
+ padding-left: 650px;
+    width: 45px;
+    height: 45px;
+   
+    
+    
+}
+
+#pics img{
+    border: solid black;
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+}
+#pics img:hover{
+    transform: scale(1.5)
+
+}
